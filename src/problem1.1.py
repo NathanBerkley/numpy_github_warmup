@@ -23,7 +23,9 @@ def border_with_zeros(arr):
         ])
     '''
     # your code here!
-    pass
+    zeros = np.full(shape=(4, 4), fill_value=0)
+    zeros[1:3, 1:3] = arr
+    return zeros
 
 if __name__ == '__main__':
     # Test your code here!
